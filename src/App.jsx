@@ -65,7 +65,7 @@ function App() {
           </main>
           <footer className="mt-12 py-6 border-t-2 border-[#FF9933] dark:border-[#FFB366]">
             <div className="max-w-7xl mx-auto px-4 text-center text-gray-600 dark:text-gray-400">
-              <p className="text-sm">Government of India | Nagrik Pehchan</p>
+              <p className="text-sm">© Government of India - Ministry of Electronics and Information Technology | Aadhaar Stress Index Monitoring System</p>
             </div>
           </footer>
         </div>
