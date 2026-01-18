@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit -p tsconfig.app.json"
+    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "prebuild": "npx update-browserslist-db --yes 2>/dev/null || true"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
@@ -16,7 +17,8 @@
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "update-browserslist-db": "^1.2.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
