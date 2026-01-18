@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import './ChatBot.css'
+import './chatbot.css'
 import { supabase } from '../lib/supabase'
 
 const ChatBot = () => {
