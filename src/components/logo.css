@@ -1,0 +1,24 @@
+.logo{
+    width: 100vw;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.logo img{
+    height: 8vh;
+
+}
+
+
+@media (max-width: 412px) {
+    .logo img{
+        height: 6vh;
+        width:75vw;
+    
+    }
+
+}
