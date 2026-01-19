@@ -131,7 +131,23 @@ export default function ChartsSection({ data }) {
         backgroundColor: 'rgba(0, 0, 0, 0.8)',
         padding: 12,
         titleFont: { size: 14, weight: 'bold' },
-        bodyFont: { size: 12 }
+        bodyFont: { size: 12 },
+        callbacks: {
+          label: (context) => {
+            const datasetLabel = context.dataset.label;
+            const value = context.parsed.y;
+            
+            if (datasetLabel === t('stressIndex')) {
+              // Format as scaled value (0-1 range)
+              return `${datasetLabel}: ${(value / 100).toFixed(2)}`;
+            } else if (datasetLabel === t('annualStress')) {
+              // Format as scaled value (0-1 range)
+              return `${datasetLabel}: ${(value / 100).toFixed(2)}`;
+            }
+            
+            return `${datasetLabel}: ${value.toFixed(2)}`;
+          }
+        }
       }
     },
     scales: {
